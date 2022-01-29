@@ -86,8 +86,6 @@ body {
 .button--blue:hover {
     background-color: #0062ff;
 }
-.text-block {
-}
 .text-block__title {
     font-weight: 700;
     font-size: 44px;
@@ -106,8 +104,6 @@ body {
     letter-spacing: 0.5px;
     margin-bottom: 24px;
 }
-.text-block__button {
-}
 
 /* --- HEADER --- */
 .header {
@@ -115,7 +111,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 50px;
+    z-index: 50;
 }
 .header__container {
     display: flex;
@@ -137,7 +133,6 @@ body {
     justify-content: flex-end;
     align-items: center;
 }
-
 .menu {
     display: flex;
     justify-content: flex-end;
@@ -148,7 +143,6 @@ body {
 .menu__item {
     margin-right: 40px;
 }
-
 .menu__link {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -318,7 +312,6 @@ body {
         height: 100%;
         background-color: #fff;
         padding: 90px 15px 30px 15px;
-        z-index: 2;
         transition: all 0.5s;
     }
     .header:target .menu__body {
