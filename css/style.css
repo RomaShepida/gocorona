@@ -63,6 +63,51 @@ body {
 .close-icon-menu {
     display: none;
 }
+.button {
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 1.4px;
+    color: #fcfdfe;
+    background-color: #ec5863;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.button:hover {
+    background-color: #ff0011;
+}
+.button--blue {
+    background-color: #4285f4;
+}
+.button--blue:hover {
+    background-color: #0062ff;
+}
+.text-block {
+}
+.text-block__title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 126%;
+    color: #000000;
+    margin-bottom: 12px;
+}
+.text-block__title--blue span {
+    color: #4285f4;
+}
+.text-block__title span {
+    color: #ec5863;
+}
+.text-block__text {
+    line-height: 138%;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+}
+.text-block__button {
+}
 
 /* --- HEADER --- */
 .header {
@@ -109,37 +154,92 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 10px;
-    line-height: 1.2;
+    line-height: 120%;
     letter-spacing: 1.4px;
     color: #000;
 }
 .menu__link:hover {
     text-decoration: underline;
 }
-.button {
-    display: inline-block;
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 10px;
-    line-height: 1.2;
-    letter-spacing: 1.4px;
-    color: #fcfdfe;
+
+/* --- /HEADER --- */
+
+/* --- GET-STARTED --- */
+.get-started {
+    background-color: #fafbfd;
+}
+.get-started__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 153px 15px 48px 15px;
+    position: relative;
+}
+.get-started__container::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    right: 267px;
+    top: 0;
     background-color: #ec5863;
-    padding: 15px 30px;
-    border-radius: 5px;
+    border-radius: 30px 0px 0px 30px;
+    transform: translate(100%, 0);
+}
+.get-started__content {
+    flex: 0 1 48%;
+    padding: 0px 18px 0px 18px;
+}
+.get-started__text-block {
+    max-width: 420px;
+}
+.get-started__video {
+    flex: 1 1 100%;
+    padding: 60px 0px 0px 18px;
+}
+.get-started__image {
+    flex: 0 1 52%;
+    padding: 0px 8px 0px 0px;
+    z-index: 2;
+}
+.get-started__image img {
+    max-width: 100%;
+}
+
+.video-get-started {
+    display: inline-flex;
+    align-items: center;
+}
+.video-get-started__icon {
+    flex: 0 0 44px;
+}
+.video-get-started__body {
+    padding: 0px 0px 0px 12px;
+}
+.video-get-started__title {
+    font-size: 13px;
+    line-height: 126%;
+    letter-spacing: 0.5px;
+    color: #b0b0b0;
+    margin-bottom: 5px;
     transition: all 0.5s;
 }
-.button:hover {
-    background-color: #ee949a;
+.video-get-started__text {
+    font-size: 9px;
+    line-height: 126%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000;
+    transition: all 0.5s;
 }
-.button--blue {
-    background-color: #4285f4;
+.video-get-started:hover .video-get-started__title {
+    color: #000;
 }
-.button--blue:hover {
-    background-color: #0062ff;
+.video-get-started:hover .video-get-started__text {
+    color: #b0b0b0;
 }
-/* --- /HEADER --- */
+
+/* --- /GET-STARTED --- */
 
 /* --- @MEDIA --- */
 /* -- PC -- */
@@ -161,6 +261,10 @@ body {
     }
     .menu__item {
         margin-right: 30px;
+    }
+    .get-started__container::before {
+        right: 185px;
+        border-radius: 20px 0px 0px 20px;
     }
 }
 
@@ -214,6 +318,7 @@ body {
         height: 100%;
         background-color: #fff;
         padding: 90px 15px 30px 15px;
+        z-index: 2;
         transition: all 0.5s;
     }
     .header:target .menu__body {
@@ -250,6 +355,33 @@ body {
     }
     .header:target .close-icon-menu {
         display: flex;
+    }
+    .get-started__container::before {
+        display: none;
+    }
+    .get-started__container {
+        padding: 100px 15px 30px 15px;
+    }
+    .get-started__text-block {
+        max-width: none;
+    }
+
+    .get-started__content {
+        flex: 1 1 100%;
+        padding: 0;
+    }
+    .get-started__image {
+        flex: 1 1 100%;
+        text-align: center;
+        padding: 30px 0;
+    }
+    .get-started__video {
+        padding: 0;
+    }
+
+    .text-block__title {
+        line-height: 114%;
+        font-size: 34px;
     }
 }
 /* -- MOBILE SMALL -- */
