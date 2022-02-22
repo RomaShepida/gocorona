@@ -414,9 +414,7 @@ body {
 
 /* --- HEALTHCARE --- */
 .healthcare {
-	padding: 80px 0 50px;
-}
-.healthcare__container {
+	padding: 80px 0 70px;
 }
 .healthcare__text-block {
 	margin: 0 0 47px 0;
@@ -442,8 +440,6 @@ body {
 }
 .item-healthcare__image {
 	margin: 0 0 58px 0;
-}
-.item-healthcare__content {
 }
 .item-healthcare__title {
 	font-weight: 700;
@@ -504,6 +500,18 @@ body {
 	transform: rotate(-30deg);
 }
 /* --- /HEALTHCARE --- */
+
+/* --- FOOTER --- */
+.footer {
+	margin: 0 0 40px 0;
+}
+.footer__items {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 60px;
+}
+/* --- /FOOTER --- */
 
 /* --- @MEDIA --- */
 /* -- PC -- */
